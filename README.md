@@ -4,13 +4,15 @@
 
 Implement a PID controller in C++ to maneuver the vehicle around the track.The simulator will provide the cross track error (CTE) and 
 the velocity (mph) in order to compute the appropriate steering angle.
-1[]()
+
+![](https://github.com/Luzhongyue/CarND-PID-Control/blob/master/Images/simulator.png)
 
 ## What is PID
 
 PID is propotion(P), integral(I) and derivative(D), the three parameters represents how we use our error to generate control instructions. 
 The whole process is as follows:
-![]()
+
+![](https://github.com/Luzhongyue/CarND-PID-Control/blob/master/Images/PID.png)
 
 Firstly,according to the feedback error and reference calculate the error, the error according to the specific situation can be a variety 
 of measures, such as controling the vehicle in a specified path , erros are the current position of motor vehicles and the distance 
@@ -45,8 +47,10 @@ value = -Kp * p_error - Ki * i_error - Kd * d_error
 
 The effect of PID is showed as below:
 
+![](https://github.com/Luzhongyue/CarND-PID-Control/blob/master/Images/pidcompare.png)
+
 ## How to choose the three hyperparameters
 
 The three hyperparameters can be chose using *Twiddle* algorithm. The principle is shown in the figure below：
 
-![]()
+![](https://github.com/Luzhongyue/CarND-PID-Control/blob/master/Images/twiddle.png)
